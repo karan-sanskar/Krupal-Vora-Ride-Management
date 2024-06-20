@@ -61,8 +61,7 @@
   {
    "fieldname": "total_amount",
    "fieldtype": "Currency",
-   "label": "Total Amount",
-   "options": "doc.price_per_km*doc.estimated_km"
+   "label": "Total Amount"
   },
   {
    "fieldname": "customer",
@@ -98,7 +97,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-20 13:13:47.522791",
+ "modified": "2024-06-20 22:21:14.706999",
  "modified_by": "Administrator",
  "module": "Ride Managment",
  "name": "Ride Booking",
