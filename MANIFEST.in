@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ride_managment *.css
+recursive-include ride_managment *.csv
+recursive-include ride_managment *.html
+recursive-include ride_managment *.ico
+recursive-include ride_managment *.js
+recursive-include ride_managment *.json
+recursive-include ride_managment *.md
+recursive-include ride_managment *.png
+recursive-include ride_managment *.py
+recursive-include ride_managment *.svg
+recursive-include ride_managment *.txt
+recursive-exclude ride_managment *.pyc
