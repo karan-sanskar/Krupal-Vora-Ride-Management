@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{vehicle}-{YY}-{####}",
+ "creation": "2024-06-20 12:34:46.686498",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vehicle",
+  "make",
+  "type",
+  "price_per_km",
+  "estimated_km",
+  "services",
+  "total_amount",
+  "customer",
+  "customer_name",
+  "phone_number",
+  "booking_date",
+  "return_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle Ride"
+  },
+  {
+   "fetch_from": "vehicle.make",
+   "fieldname": "make",
+   "fieldtype": "Data",
+   "label": "Make"
+  },
+  {
+   "fetch_from": "vehicle.type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fetch_from": "vehicle.price_per_km",
+   "fieldname": "price_per_km",
+   "fieldtype": "Data",
+   "label": "Price Per Km"
+  },
+  {
+   "fieldname": "estimated_km",
+   "fieldtype": "Float",
+   "label": "Estimated Km"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Ride Add On"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "options": "doc.price_per_km*doc.estimated_km"
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Ride Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Return Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-20 13:13:47.522791",
+ "modified_by": "Administrator",
+ "module": "Ride Managment",
+ "name": "Ride Booking",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
